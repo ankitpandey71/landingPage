@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import hero from "../assets/hero.png";
 
 const TrendingProducts = () => {
   const [products, setProducts] = useState([]);
@@ -6,7 +7,7 @@ const TrendingProducts = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://dummyjson.com/products?limit=10&skip=10&select=title,price")
+    fetch("https://dummyjson.com/products?limit=06&skip=10&select=title,price")
       .then((res) => res.json())
       .then((data) => {
         setProducts(data.products);
@@ -32,7 +33,8 @@ const TrendingProducts = () => {
       <div className="flex flex-wrap -mx-2">
         {products.map((product) => (
           <div key={product.id} className="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
-            <div className="bg-white p-4 shadow rounded">
+            <div className="bg-white p-4 shadow rounded flex flex-col items-center justify-center">
+              <img src={hero} alt="hero" className="w-20 h-32" />
               <h3 className="text-lg font-semibold">{product.title}</h3>
               <p className="text-gray-700">${product.price}</p>
             </div>

@@ -1,4 +1,5 @@
 import hero from "../assets/hero.png";
+import Footer from "./Footer";
 import OfferSection from "./OfferSection";
 import SlideBox from "./SlideBox";
 import TrendingProducts from "./TrendingProducts";
@@ -28,6 +29,7 @@ const Home = () => {
       <SlideBox />
       <TrendingProducts />
       <OfferSection />
+      <Footer />
     </div>
   );
 };
