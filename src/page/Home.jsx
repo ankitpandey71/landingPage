@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div className="flex flex-col md:flex-row justify-center items-center h-screen bg-gray-100 p-6">
+      <div className="flex flex-col md:flex-row justify-center items-center h-screen bg-gray-200 p-6">
         {/* Text Section */}
         <div className="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left p-4 md:p-8">
           <h6 className="text-gray-600 text-sm mb-2">Starting At $999</h6>
@@ -24,7 +24,7 @@ const Home = () => {
           </button>
         </div>
         {/* Image Section */}
-        <div className="w-full md:w-1/2 flex justify-center items-center">
+        <div className="w-full md:w-1/2 flex justify-center items-center ">
           <img src={hero} alt="Hero" className="w-full max-w-md h-auto" />
         </div>
       </div>
@@ -33,7 +33,6 @@ const Home = () => {
       <SlideBox />
       <TrendingProducts />
       <OfferSection />
-      <Footer />
     </div>
   );
 };

@@ -29,7 +29,7 @@ const TrendingProducts = () => {
 
   return (
     <div>
-      <h2>Trending Products</h2>
+      <h2 className="m-8 text-3xl shadow-lg w-fit">Trending Products</h2>
       <div className="flex flex-wrap -mx-2">
         {products.map((product) => (
           <div key={product.id} className="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
