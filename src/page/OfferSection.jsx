@@ -8,6 +8,7 @@ const OfferSection = () => {
       </div>
       <div className="w-1/2 flex justify-center items-center">
         <h1>Dont Miss the Offer Grab it now</h1>
+        <button>Shop Now </button>
       </div>
     </div>
   );
